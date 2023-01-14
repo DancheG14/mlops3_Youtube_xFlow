@@ -7,8 +7,8 @@ postgresql postgresql-contrib postgresql-server-dev-all
 os
 requests
 json
-numpy           1.23.3 
-pandas          1.5.0  
+numpy==1.23.3 
+pandas==1.5.0  
 scikit-learn==1.1.2
 python-youtube
 mlflow
