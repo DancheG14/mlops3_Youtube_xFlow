@@ -1,0 +1,7 @@
+numpy           1.23.3 
+pandas          1.5.0  
+pip             20.0.2
+scikit-learn==1.1.2
+python-youtube
+mlflow
+apache-airflow[celery]==2.2.5" \ --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.2.5/constraints-3.8.txt"
