@@ -1,4 +1,3 @@
-libsqlite3-dev
 pysqlite3
 libpq-dev
 gcc
