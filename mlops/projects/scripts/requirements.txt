@@ -1,7 +1,7 @@
-sqlite3 libsqlite3-dev -y
+sqlite3 libsqlite3-dev
 pysqlite3
-libpq-dev -y
-gcc -y
+libpq-dev
+gcc
 psycopg2
 postgresql postgresql-contrib postgresql-server-dev-all
 os
