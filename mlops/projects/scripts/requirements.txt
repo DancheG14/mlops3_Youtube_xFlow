@@ -16,4 +16,4 @@ scikit-learn==1.1.2
 python-youtube
 mlflow
 pickle
-apache-airflow[celery]==2.2.5" \ --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.2.5/constraints-3.8.txt"
+apache-airflow[celery]==2.2.5
