@@ -1,9 +1,12 @@
-sqlite3 libsqlite3-dev
+sqlite3
+libsqlite3-dev
 pysqlite3
 libpq-dev
 gcc
 psycopg2
-postgresql postgresql-contrib postgresql-server-dev-all
+postgresql
+postgresql-contrib
+postgresql-server-dev-all
 os
 requests
 json
