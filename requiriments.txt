@@ -1,4 +1,3 @@
-pip             20.0.2
 sqlite3 libsqlite3-dev -y
 pysqlite3
 libpq-dev -y
