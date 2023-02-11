@@ -1,7 +1,5 @@
-pip install python-youtube
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-import pendulum
 import datetime as dt
  
 args = {
