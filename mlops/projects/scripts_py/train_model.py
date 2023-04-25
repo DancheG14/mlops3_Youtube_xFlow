@@ -7,7 +7,7 @@ import os
 import mlflow
 from mlflow.tracking import MlflowClient
  
-mlflow.set_tracking_uri("http://localhost:5000")
+mlflow.set_tracking_uri("http://0.0.0.0:5000")
 mlflow.set_experiment("train_model")
  
 df = pd.read_csv('/home/mlops/project/datasets/data_train.csv', header=None)
