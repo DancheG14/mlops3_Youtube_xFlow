@@ -5,8 +5,8 @@ from pyyoutube import Api
 import mlflow
 from mlflow.tracking import MlflowClient
  
-os.environ["MLFLOW_REGISTRY_URI"] = "/home/mlflow/project/mlflow/"
-mlflow.set_tracking_uri("http://localhost:5000")
+os.environ["MLFLOW_REGISTRY_URI"] = "/home/mlops/project/mlflow/"
+mlflow.set_tracking_uri("http://0.0.0.0:5000")
 mlflow.set_experiment("get_data")
  
 key = "AIzaSyDLPxQt58NAGRgWofnsSg4bPyKCHvxqsRk"
