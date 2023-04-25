@@ -6,7 +6,9 @@ import os
 
 import mlflow
 from mlflow.tracking import MlflowClient
+
  
+os.environ["MLFLOW_REGISTRY_URI"] = "/home/mlops/project/scripts_py/"
 mlflow.set_tracking_uri("http://0.0.0.0:5000")
 mlflow.set_experiment("train_model")
  
@@ -15,15 +17,18 @@ df.columns = ['id', 'counts']
  
 model = LinearRegression()
 
+ 
+model.fit(df['id'].values.reshape(-1,1), df['counts'])
+
+
 with mlflow.start_run():
     mlflow.sklearn.log_model(model,
                              artifact_path="lr",
                              registered_model_name="lr")
-    mlflow.log_artifact(local_path="/home/mlops/project/scripts/train_model.py",
+    mlflow.log_artifact(local_path="/home/mlops/project/scripts_py/train_model.py",
                         artifact_path="train_model code")
     mlflow.end_run()
  
-model.fit(df['id'].values.reshape(-1,1), df['counts'])
  
 with open('/home/mlops/project/models/data.pickle', 'wb') as f:
     pickle.dump(model, f)
